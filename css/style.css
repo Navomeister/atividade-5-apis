@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+html {
+    background-color: rgb(40, 42, 54) !important;
+}
+
+body{
+    background-color: rgb(40, 42, 54);
+    color: white;
+    min-height: 100vh;
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+
+button{
+    background-color: white;
+    border-radius: 7px !important;
+    border: 4px solid white;
+}
+
+#corpo{
+    padding-top: 20px;
+}
+
+.caixa{
+    /* border: 5px solid white;
+    border-radius: 5px; */
+    margin: 10px;
+    text-align: center;
+}
+
+.caixa p{
+    color: white;
+    margin-top: 10px;
+}
+
+.caixa h1{
+    color: white;
+}
+
+.metade{
+    min-height: 35vh;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.load{
+    max-width: 300px;
+    max-height: 20px;
+    margin: auto;
+    /* position: absolute; */
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.imgHidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#teste{
+    /* display: block; */
+    position: relative;
+}
+
+#gatoImg{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+}
+
+#passaroImg{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+}
