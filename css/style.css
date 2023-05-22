@@ -13,7 +13,7 @@ body{
     color: white;
     min-height: 100vh;
     font-family: Helvetica;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
 }
 
 button{
