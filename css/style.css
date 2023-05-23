@@ -24,6 +24,7 @@ button{
 
 #corpo{
     margin-top: 100px;
+    margin-bottom: 100px;
     padding-top: 20px;
 }
 
@@ -89,4 +90,21 @@ button{
     border: none;
     background-color: transparent;
     padding-left: 0;
+}
+
+#footer{
+    background-color: #363636;
+    color: white !important;
+}
+
+h1{
+    color: white !important;
+}
+
+p{
+    color: white !important;
+}
+
+a{
+    color: white !important;
 }
