@@ -7,12 +7,41 @@
     <title>Gatos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128008</text></svg>">
+    <link rel="icon" id="favicon" href="https://png.pngtree.com/png-clipart/20210606/original/pngtree-cat-logo-png-image_6386145.jpg">
 </head>
 <body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img src="https://png.pngtree.com/png-clipart/20210606/original/pngtree-cat-logo-png-image_6386145.jpg" class="is-square">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#fatos">
+              Fatos
+            </a>
+      
+            <a class="navbar-item" href="#gatos">
+              Gatos
+            </a>
+
+            <a class="navbar-item" href="#passaro">
+              Pássaros
+            </a>
+          </div>
+        </div>
+      </nav>
     <section>  
         <div id="corpo" class="container">
-            <div class="columns metade">
+            <div class="columns metade" id="fatos">
                 <div class="column is-5 caixa">
                     <h1 class="title">Fato de Hoje:</h1>
                     <p class="subtitle" id="todayFact"></p>
@@ -28,7 +57,7 @@
                 </div>
             </div>
             <div class="columns metade">
-                <div class="column is-5 caixa">
+                <div class="column is-5 caixa" id="gatos">
                     <h1 class="title" id="tituloGato">Gatos:</h1>
                     <figure id="divImgGato" class="image imgHidden">
                         <img id="gatoImg" class="is-rounded" src="" alt="">
@@ -40,10 +69,10 @@
                 <div class="column is-2 caixa">
                     <p class="subtitle" id="pEmojo2"></p>
                 </div>
-                <div id="teste" class="column is-5 caixa">
+                <div id="passaro" class="column is-5 caixa">
                     <h1 class="title">Pássaro:</h1>
                     <figure id="figurePassaro" class="image imgHidden">
-                        <img src="" alt="" class="is-square" id="passaroImg">
+                        <img src="" alt="" class="is-rounded" id="passaroImg">
                     </figure>
                     <p class="subtitle">Pássaro</p>
                     <progress id="loadPassaro" class="progress load" max="100">10%</progress>
@@ -54,5 +83,28 @@
     </section>
 
     <script src="js/script.js"></script>
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+        });
+        });
+
+        });
+    </script>
+a</body>
 </html>

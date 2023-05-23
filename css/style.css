@@ -23,6 +23,7 @@ button{
 }
 
 #corpo{
+    margin-top: 100px;
     padding-top: 20px;
 }
 
@@ -62,11 +63,6 @@ button{
 .imgHidden{
     opacity: 0;
     visibility: hidden;
-}
-
-#teste{
-    /* display: block; */
-    position: relative;
 }
 
 #gatoImg{
